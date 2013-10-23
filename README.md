@@ -24,25 +24,27 @@ Al ejecutar el `rake` se produce un error debido a que no hemos definido nunguna
 correctamente un numerador y un denominador. Además añadimos un `before` para la creación del objeto que utilizaremos en las pruebas.
 Al ejecutar `rake` obtenemos el siguiente error que indica que en la clase no hay un método initialize y por lo tanto no podemos usar el constructor.
 
-Failures:
+	Failures:
 
-  1) Fraccion Debe existir un numerador
-     Failure/Error: Unable to find matching line from backtrace
-     ArgumentError:
-       wrong number of arguments (2 for 0)
-     # ./spec/racional_spec.rb:8:in `initialize'
-     # ./spec/racional_spec.rb:8:in `new'
-     # ./spec/racional_spec.rb:8
+	  1) Fraccion Debe existir un numerador
+	     Failure/Error: Unable to find matching line from backtrace
+	     ArgumentError:
+	       wrong number of arguments (2 for 0)
+	     # ./spec/racional_spec.rb:8:in `initialize'
+	     # ./spec/racional_spec.rb:8:in `new'
+	     # ./spec/racional_spec.rb:8
 
-  2) Fraccion Debe existir un denominador
-     Failure/Error: Unable to find matching line from backtrace
-     ArgumentError:
-       wrong number of arguments (2 for 0)
-     # ./spec/racional_spec.rb:8:in `initialize'
-     # ./spec/racional_spec.rb:8:in `new'
-     # ./spec/racional_spec.rb:8
+	  2) Fraccion Debe existir un denominador
+	     Failure/Error: Unable to find matching line from backtrace
+	     ArgumentError:
+	       wrong number of arguments (2 for 0)
+	     # ./spec/racional_spec.rb:8:in `initialize'
+	     # ./spec/racional_spec.rb:8:in `new'
+	     # ./spec/racional_spec.rb:8
 
-Finished in 0.00038 seconds
-2 examples, 2 failures
-rake aborted!
+	Finished in 0.00038 seconds
+	2 examples, 2 failures
+	rake aborted!
+
+6. Solucionamos el error anterior creando el método `initialize` en el fichero `racional.rb`. Además añadimos el método `attr_reader` para poder acceder a las variables.
 
