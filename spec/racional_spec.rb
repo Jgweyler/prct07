@@ -18,6 +18,12 @@ describe Fraccion do	#Es la primera expectativa
 		@rac1.denom.should eq(3)		
 	end
 
+	it "Debemos mostrar la fraccion como a/b" do
+		@rac1.to_s.should eq("2/3")
+
+
+	end
+
 	it "Debe realizarse la suma de fracciones" do
 		@rac3=@rac1+@rac2
 		@rac3.num.should eq(17)
