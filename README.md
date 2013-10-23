@@ -54,4 +54,4 @@ Al ejecutar `rake` obtenemos el siguiente error que indica que en la clase no ha
 11. Creamos las expectativas para el máximo común divisor y el mínimo común múltiplo. Al ejecutar `rake` saldrá un fallo especificando que los ficheros no existen.
 12. Para solucionar el error anterior, creamos los ficheros `gcd.rb` y `mcm.rb` dentro del directorio `lib`. Los métodos que implementemos en estos ficheros son necesarios para realizar la suma y/o la resta de fracciones de diferente denominador.
 13. Añadimos las expectativas tanto para la suma como para la resta en su mínima expresión. Obtendremos un nuevo fallo ya que los métodos para sumar y restar no están definidos.
-
+14. Cumplimos las expectativas anteriores definiendo e implementando los métodos de suma y resta en la definición de la clase `Fraccion`. Es necesario crear un método para reducir el resultado a su mínima expresión. Este método se llama `simplificar` y hace uso de el `gcd` y `mcm`. También hemos añadido los métodos de máximo común divisor y de mínimo común múltiplo en sus correspondientes ficheros. 
