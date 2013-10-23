@@ -19,3 +19,30 @@ Al ejecutar el `rake` se produce un error debido a que no hemos definido nunguna
 3. Añandimos el `require` dentro del fichero de expectativas. Si ejecutamos un `rake`se producirá un error porque no hemos creado el fichero. Entonces, creamos el fichero `racional.rb` dentro del directorio `lib`. 
 
 4. Modificamos el fichero `racional.rb` incluyendo la definición de la clase `Fraccion`.
+
+5. Creamos la primera expectativa dentro del fichero `racional_spec.rb` en la que vamos a indicar que en nuestro objeto se almacena 
+correctamente un numerador y un denominador. Además añadimos un `before` para la creación del objeto que utilizaremos en las pruebas.
+Al ejecutar `rake` obtenemos el siguiente error que indica que en la clase no hay un método initialize y por lo tanto no podemos usar el constructor.
+
+Failures:
+
+  1) Fraccion Debe existir un numerador
+     Failure/Error: Unable to find matching line from backtrace
+     ArgumentError:
+       wrong number of arguments (2 for 0)
+     # ./spec/racional_spec.rb:8:in `initialize'
+     # ./spec/racional_spec.rb:8:in `new'
+     # ./spec/racional_spec.rb:8
+
+  2) Fraccion Debe existir un denominador
+     Failure/Error: Unable to find matching line from backtrace
+     ArgumentError:
+       wrong number of arguments (2 for 0)
+     # ./spec/racional_spec.rb:8:in `initialize'
+     # ./spec/racional_spec.rb:8:in `new'
+     # ./spec/racional_spec.rb:8
+
+Finished in 0.00038 seconds
+2 examples, 2 failures
+rake aborted!
+
