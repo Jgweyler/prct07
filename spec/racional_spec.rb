@@ -23,6 +23,10 @@ describe Fraccion do	#Es la primera expectativa
 
 
 	end
+	
+	it "Debemos mostrar la fraccion en formato flotante" do
+		@rac2.to_float.should eq(3/4)
+	end
 
 	it "Debe realizarse la suma de fracciones" do
 		@rac3=@rac1+@rac2
