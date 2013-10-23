@@ -1,5 +1,8 @@
 #Fichero para el desarrollo de la clase Fraccion
 
+require "lib/gcd.rb"
+require "lib/mcm.rb"
+
 class Fraccion #Definición de la clase Fraccion.
 	#attr_reader :num, :den
 	def initialize(num, den)
