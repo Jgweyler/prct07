@@ -21,4 +21,9 @@ describe Fraccion do	#Es la primera expectativa
 		@rac3.num.should eq(6)
 		@rac3.den.should eq(12)
 	end
+	it "Debe realizarse la división de fracciones" do
+		@rac3=@rac1/@rac2
+		@rac3.num.should eq(8)
+		@rac3.den.should eq(9)
+	end
 end
