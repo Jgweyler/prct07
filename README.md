@@ -51,6 +51,7 @@ Al ejecutar `rake` obtenemos el siguiente error que indica que en la clase no ha
 8. En el fichero `racional.rb` definimos el método `*` (que realiza el producto de fracciones) para que se cumpla la expectativa. 
 9. Creamos la expectativa para realizar la división de fracciones. Al ejecutar el `rake` obtenemos un error porque tenemos el método definido para realizar la operación.
 10. En el fichero `racional.rb` definimos el método `/` (que realiza la división de fracciones) para que se cumpla la expectativa.
-
+11. Creamos las expectativas para el máximo común divisor y el mínimo común múltiplo. Al ejecutar `rake` saldrá un fallo especificando
+que los ficheros no existen.
 
 
