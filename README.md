@@ -18,3 +18,4 @@ Al ejecutar el `rake` se produce un error debido a que no hemos definido nunguna
 
 3. Añandimos el `require` dentro del fichero de expectativas. Si ejecutamos un `rake`se producirá un error porque no hemos creado el fichero. Entonces, creamos el fichero `racional.rb` dentro del directorio `lib`. 
 
+4. Modificamos el fichero `racional.rb` incluyendo la definición de la clase `Fraccion`.
