@@ -17,6 +17,18 @@ describe Fraccion do	#Es la primera expectativa
 	it "Debe existir un denominador" do
 		@rac1.den.should eq(3)		
 	end
+
+	it "Debe realizarse la suma de fracciones" do
+		@rac3=@rac1+@rac2
+		@rac3.num.should eq(7)
+		@rac3.den.should eq(4)
+	end
+	
+	it "Debe realizarse la suma de fracciones" do
+		@rac3=@rac1-@rac2
+		@rac3.num.should eq(1)
+		@rac3.den.should eq(6)
+	end
 	
 	it "Debe realizarse el producto de fracciones" do
 		@rac3=@rac1*@rac2

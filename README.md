@@ -53,4 +53,5 @@ Al ejecutar `rake` obtenemos el siguiente error que indica que en la clase no ha
 10. En el fichero `racional.rb` definimos el método `/` (que realiza la división de fracciones) para que se cumpla la expectativa.
 11. Creamos las expectativas para el máximo común divisor y el mínimo común múltiplo. Al ejecutar `rake` saldrá un fallo especificando que los ficheros no existen.
 12. Para solucionar el error anterior, creamos los ficheros `gcd.rb` y `mcm.rb` dentro del directorio `lib`. Los métodos que implementemos en estos ficheros son necesarios para realizar la suma y/o la resta de fracciones de diferente denominador.
+13. Añadimos las expectativas tanto para la suma como para la resta en su mínima expresión. Obtendremos un nuevo fallo ya que los métodos para sumar y restar no están definidos.
 
