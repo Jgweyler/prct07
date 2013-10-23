@@ -9,4 +9,8 @@ class Fraccion #Definición de la clase Fraccion.
 	def *(other)
 		Fraccion.new(@num*other.num, @den*other.den)	
 	end
+	
+	def /(other)
+		Fraccion.new(@num*other.den, @den*other.num)	
+	end
 end
