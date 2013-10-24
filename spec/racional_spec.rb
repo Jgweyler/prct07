@@ -7,9 +7,10 @@ require "lib/mcm.rb"
 describe Fraccion do	#Es la primera expectativa
 	
 	before :each do
-		@rac1=Fraccion.new(2,3)
-		@rac2=Fraccion.new(3,4)
-		@rac3=Fraccion.new(4,6)
+		@rac1 = Fraccion.new(2,3)
+		@rac2 = Fraccion.new(3,4)
+		@rac3 = Fraccion.new(4,6)
+		@rac4 = Fraccion.new(-5,2)
 	end
 	it "Debe existir un numerador" do
 		@rac1.num.should eq(2)		
@@ -38,6 +39,11 @@ describe Fraccion do	#Es la primera expectativa
 	it "Se debe calcular el opuesto de una fraccion con -" do
 		@rac3= Fraccion.new(-2,3)
 		(-@rac1).should == @rac3
+	end
+
+	it "Se debe calcular el valor absoluto de una fraccion con abs" do
+		@rac3= Fraccion.new(5,2)
+		@rac4.abs.should == @rac3
 	end
 
 	it "Debe realizarse la suma de fracciones" do
