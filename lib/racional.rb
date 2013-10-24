@@ -25,6 +25,10 @@ class Fraccion #Definición de la clase Fraccion.
 	
 	def to_float()
 		@num/@den
+	end
+
+	def ==(other)
+		((@num == other.num) && (@den == other.denom))
 	end 
 
 	def reciproco()
