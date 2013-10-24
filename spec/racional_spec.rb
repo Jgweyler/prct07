@@ -68,4 +68,10 @@ describe Fraccion do	#Es la primera expectativa
 		@rac3.num.should eq(8)
 		@rac3.denom.should eq(9)
 	end
+
+	it "Se debe calcular el resto dos fracciones con % y dar el resultado de forma reducida" do
+		@rac1%@rac2.should eq(8)
+		
+	end
+	
 end
