@@ -31,7 +31,13 @@ describe Fraccion do	#Es la primera expectativa
 	end
 
 	it "Debemos mostrar la fraccion recíproca" do
-		@rac1.reciproco.should eq("3/2")
+		@rac3=Fraccion.new(3,2)
+		@rac1.reciproco.should == @rac3
+	end
+
+	it "Se debe calcular el opuesto de una fraccion con -" do
+		@rac3= Fraccion.new(-2,3)
+		(-@rac1).should == @rac3
 	end
 
 	it "Debe realizarse la suma de fracciones" do

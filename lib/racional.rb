@@ -32,10 +32,7 @@ class Fraccion #Definición de la clase Fraccion.
 	end 
 
 	def reciproco()
-		aux= @num
-		@num=@den
-		@den=aux
-		"#{@num}/#{@den}"
+		Fraccion.new(@den,@num)
 	end
 
 	def +(other)
