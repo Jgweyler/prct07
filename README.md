@@ -69,4 +69,4 @@ Al ejecutar `rake` obtenemos el siguiente error que indica que en la clase no ha
 26. Añadida la defición del método `abs` para cumplir la expectativa.
 27. Creada la expectativa para el operador resto entre dos fracciones.
 28. Se ha modificado un error de sintaxis en la expectativa del operador %. Añadiendo paréntesis hemos corregido dicho error. Además se ha definido el método para dicho operador.
-
+29. Creada la expectativa para comprobar si una fraccion es menor que otra.

@@ -71,7 +71,11 @@ describe Fraccion do	#Es la primera expectativa
 
 	it "Se debe calcular el resto dos fracciones con % y dar el resultado de forma reducida" do
 		(@rac1%@rac2).should eq(8)
-		
 	end
-	
+
+	it "Se debe comparar si una fracción es menor que otra" do
+		(@rac1 < @rac2).should == be_false
+		(@rac2 < @rac1).should == be_true		
+	end
+		
 end
