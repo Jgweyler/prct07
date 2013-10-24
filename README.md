@@ -61,4 +61,4 @@ Al ejecutar `rake` obtenemos el siguiente error que indica que en la clase no ha
 18. Para solventar el error anterior, se ha implementado el método to_float.
 19. Creamos una nueva expectativa para crear el recíproco  de una fracción. Como en los casos anteriores, al hacer un `rake`se nos informará de que el método no está definido.
 20. Definimos el método que permite crear el recíproco de una fracción.
-
+21. Creamos una nueva expectativa para poder comparar dos fracciones usando `==`. El error al ejecutar el programa con `rake` nos dice que ha sido imposible encontrar el método definido. También se ha modificado el método `initialize` para que simplifique las fracciones.  
