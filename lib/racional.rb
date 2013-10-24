@@ -34,6 +34,10 @@ class Fraccion #Definición de la clase Fraccion.
 	def reciproco()
 		Fraccion.new(@den,@num)
 	end
+	
+	def -@()
+		Fraccion.new(-@num, @den)
+	end
 
 	def +(other)
 		aux = mcm(@den, other.denom)           #mcm de los denominadores
