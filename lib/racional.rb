@@ -67,5 +67,9 @@ class Fraccion #Definición de la clase Fraccion.
 		aux = gcd(other.num, other.denom)                 #halla el mcd de numerador y denominador
                 Fraccion.new(other.num/aux, other.denom/aux)         #divide los valores anteriores entre el mcd obtenido
 	end
+
+	def %(other)
+		((@num *other.denom)%(@den*other.num))	
+	end
 	
 end
