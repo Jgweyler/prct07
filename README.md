@@ -58,3 +58,5 @@ Al ejecutar `rake` obtenemos el siguiente error que indica que en la clase no ha
 15. Añadimos la expectativa para mostrar una fracción en formato a/b.
 16. Se ha definido el método `to_s` dentro de la clase `Fraccion` y comprobando que cumple las expectativas asociadas al método.
 17. A continuación, creamos una nueva expectativa para mostrar la fracción en formato flotante. Nos aparecerá un error indicando que no existe el método to_float.
+18. Para solventar el error anterior, se ha implementado el método to_float.
+

@@ -20,6 +20,10 @@ class Fraccion #Definición de la clase Fraccion.
 	def to_s()
 		"#{@num}/#{@den}"
 	end 
+	
+	def to_float()
+		@num/@den
+	end 
 
 	def +(other)
 		aux = mcm(@den, other.denom)           #mcm de los denominadores
