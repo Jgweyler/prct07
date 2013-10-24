@@ -74,8 +74,12 @@ describe Fraccion do	#Es la primera expectativa
 	end
 
 	it "Se debe comparar si una fracción es menor que otra" do
-		(@rac1 < @rac2).should be_false
-		(@rac2 < @rac1).should be_true		
+		(@rac1 < @rac2).should be_true
+		(@rac2 < @rac1).should be_false		
 	end
-		
+	
+	it "Se debe comparar si una fracción es mayor que otra" do
+		(@rac1 > @rac2).should be_false
+		(@rac2 > @rac1).should be_true		
+	end	
 end

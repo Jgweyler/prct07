@@ -69,11 +69,15 @@ class Fraccion #Definición de la clase Fraccion.
 	end
 
 	def %(other)
-		((@num *other.denom)%(@den*other.num))	
+		((@num * other.denom) % (@den * other.num))	
 	end
 
 	def <(other)
-		((self.to_float) < (other.to_float))
+		(@num * other.denom) < (@den * other.num)
+	end
+
+	def >(other)
+		(@num * other.denom) > (@den * other.num)
 	end
 	
 end
