@@ -29,7 +29,7 @@ describe Fraccion do	#Es la primera expectativa
 	end
 
 	it "Debemos mostrar la fraccion recíproca" do
-		@rac1.reciproco.to_s.should eq("3/2")
+		@rac1.reciproco.should eq("3/2")
 	end
 
 	it "Debe realizarse la suma de fracciones" do

@@ -60,4 +60,5 @@ Al ejecutar `rake` obtenemos el siguiente error que indica que en la clase no ha
 17. A continuación, creamos una nueva expectativa para mostrar la fracción en formato flotante. Nos aparecerá un error indicando que no existe el método to_float.
 18. Para solventar el error anterior, se ha implementado el método to_float.
 19. Creamos una nueva expectativa para crear el recíproco  de una fracción. Como en los casos anteriores, al hacer un `rake`se nos informará de que el método no está definido.
+20. Definimos el método que permite crear el recíproco de una fracción.
 

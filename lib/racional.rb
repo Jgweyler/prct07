@@ -25,6 +25,13 @@ class Fraccion #Definición de la clase Fraccion.
 		@num/@den
 	end 
 
+	def reciproco()
+		aux= @num
+		@num=@den
+		@den=aux
+		"#{@num}/#{@den}"
+	end
+
 	def +(other)
 		aux = mcm(@den, other.denom)           #mcm de los denominadores
                 resultado = Fraccion.new(((aux/@den)*@num)+((aux/other.denom)*other.num),aux) #suma de los objetos
