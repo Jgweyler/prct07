@@ -28,6 +28,10 @@ describe Fraccion do	#Es la primera expectativa
 		@rac2.to_float.should eq(3/4)
 	end
 
+	it "Debemos mostrar la fraccion recíproca" do
+		@rac1.reciproco.to_s.should eq("3/2")
+	end
+
 	it "Debe realizarse la suma de fracciones" do
 		@rac3=@rac1+@rac2
 		@rac3.num.should eq(17)
