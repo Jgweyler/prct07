@@ -4,7 +4,7 @@ require "lib/gcd.rb"
 require "lib/mcm.rb"
 
 class Fraccion #Definición de la clase Fraccion.
-	#attr_reader :num, :den
+	
 	def initialize(num, den)
 		divisor = gcd(num, den) #obtenemos el gcd de numerador y denominador para simplificar
 		@num = num/divisor	
@@ -37,6 +37,10 @@ class Fraccion #Definición de la clase Fraccion.
 	
 	def -@()
 		Fraccion.new(-@num, @den)
+	end
+
+	def abs
+		Fraccion.new(@num.abs, @den.abs)
 	end
 
 	def +(other)

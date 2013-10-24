@@ -66,4 +66,5 @@ Al ejecutar `rake` obtenemos el siguiente error que indica que en la clase no ha
 23. Se ha mejorado el método recíproco puesto que antes se comparaban cadenas de caracteres. A su vez se ha modificado la expectativa para su correcta interpretación. Además, se ha añadido la expectativa para mostrar la fracción opuesta.
 24. Añadimos el método -@ para poder crear el opuesto de una fracción. Para ello ha sido necesario eliminar la línea que calculaba el valor absoluto de las variables dentro del método gcd en el fichero `gcd.rb`.
 25. Creada la expectativa para el valor absoluto de una funcion utilizando el método `abs`. 
+26. Añadida la defición del método `abs` para cumplir la expectativa.
 
