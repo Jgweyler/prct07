@@ -6,14 +6,14 @@ require "lib/mcm.rb"
 
 describe Fraccion do	#Es la primera expectativa
 	
-	before :each do
+	before :each do #Creación de objetos que usaremos en las posteriores pruebas
 		@rac1 = Fraccion.new(2,3)
 		@rac2 = Fraccion.new(3,4)
 		@rac3 = Fraccion.new(4,6)
 		@rac4 = Fraccion.new(-5,2)
 	end
 	
-	describe "#Getters" do
+	describe "# Getters." do
 		it "Debe existir un numerador" do
 			@rac1.num.should eq(2)		
 		end
@@ -22,32 +22,32 @@ describe Fraccion do	#Es la primera expectativa
 		end
 	end
 	
-	describe "#Operaciones de formato" do
-		it "Debemos mostrar la fraccion como a/b" do
+	describe "# Operaciones de formato." do
+		it "Debemos mostrar la fracción como a/b" do
 			@rac1.to_s.should eq("2/3")
 		end
 	
-		it "Debemos mostrar la fraccion en formato flotante" do
+		it "Debemos mostrar la fracción en formato flotante" do
 			@rac2.to_float.should eq(3/4)
 		end
 	end
 
-	describe "#Otras operaciones" do
+	describe "# Otras operaciones." do
 		it "Se debe comparar si dos fracciones son iguales con ==" do
 			@rac1.should == @rac3
 		end
 
-		it "Debemos mostrar la fraccion recíproca" do
+		it "Se debe calcular la fracción recíproca" do
 			@rac3=Fraccion.new(3,2)
 			@rac1.reciproco.should == @rac3
 		end
 
-		it "Se debe calcular el opuesto de una fraccion con -" do
+		it "Se debe calcular el opuesto de una fracción con -" do
 			@rac3= Fraccion.new(-2,3)
 			(-@rac1).should == @rac3
 		end
 
-		it "Se debe calcular el valor absoluto de una fraccion con abs" do
+		it "Se debe calcular el valor absoluto de una fracción con abs" do
 			@rac3= Fraccion.new(5,2)
 			@rac4.abs.should == @rac3
 		end
@@ -57,7 +57,7 @@ describe Fraccion do	#Es la primera expectativa
 		end
 	end
 
-	describe "#Operaciones aritméticas." do
+	describe "# Operaciones aritméticas." do
 		it "Debe realizarse la suma de fracciones" do
 			@rac3=@rac1+@rac2
 			@rac3.num.should eq(17)
@@ -83,7 +83,7 @@ describe Fraccion do	#Es la primera expectativa
 	end
 
 
-	describe "#Operaciones comparacionales" do
+	describe "# Operaciones comparacionales." do
 		it "Se debe comparar si una fracción es menor que otra" do
 			(@rac1 < @rac2).should be_true
 			(@rac2 < @rac1).should be_false		
