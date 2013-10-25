@@ -1,3 +1,4 @@
+#! /usr/bin/ruby
 #Fichero para el desarrollo de la clase Fraccion
 
 require "lib/gcd.rb"
