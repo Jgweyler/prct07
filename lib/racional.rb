@@ -80,4 +80,11 @@ class Fraccion #Definición de la clase Fraccion.
 		(@num * other.denom) > (@den * other.num)
 	end
 	
+	def <=(other)
+		(@num * other.denom) <= (@den * other.num)
+	end
+	
+	def >=(other)
+		(@num * other.denom) >= (@den * other.num)
+	end
 end

@@ -73,3 +73,4 @@ Al ejecutar `rake` obtenemos el siguiente error que indica que en la clase no ha
 30. Se definió el método `<` para comprobar si una fracción es menor que otra. De esta manera quedó cumplida la expectativa anterior.
 31. Creamos la expectativa para comprobar si una fraccion es mayor que otra. Solucionamos el error que se produce al crear la expectativa definiendo el método > en el fichero `racional.rb`
 32. Añadidas las expectativas para comprobar que dos fracciones sean mayor o igual - menor o igual.
+33. Se han definido lo métodos para los operadores <= y >=.
