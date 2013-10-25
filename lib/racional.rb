@@ -46,14 +46,12 @@ class Fraccion #Definición de la clase Fraccion.
 
 	def +(other)
 		aux = mcm(@den, other.denom)           #mcm de los denominadores
-                resultado = Fraccion.new(((aux/@den)*@num)+((aux/other.denom)*other.num),aux) #suma de los objetos
-                simplificar(resultado)  
+                Fraccion.new(((aux/@den)*@num)+((aux/other.denom)*other.num),aux) #suma de los objetos 
 	end
 
 	def -(other)
 		aux = mcm(@den, other.denom)           #mcm de los denominadores
-                resultado = Fraccion.new(((aux/@den)*@num)-((aux/other.denom)*other.num),aux) #resta de los objetos
-                simplificar(resultado)  
+                Fraccion.new(((aux/@den)*@num)-((aux/other.denom)*other.num),aux) #resta de los objetos
 	end
 	
 	def *(other)
@@ -62,11 +60,6 @@ class Fraccion #Definición de la clase Fraccion.
 	
 	def /(other)
 		Fraccion.new(@num*other.denom, @den*other.num)	
-	end
-
-	def simplificar(other)
-		aux = gcd(other.num, other.denom)                 #halla el mcd de numerador y denominador
-                Fraccion.new(other.num/aux, other.denom/aux)         #divide los valores anteriores entre el mcd obtenido
 	end
 
 	def %(other)
