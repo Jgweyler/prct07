@@ -1,8 +1,8 @@
 #Fichero para definir las expectativas
 
-require "lib/racional.rb"
-require "lib/gcd.rb"
-require "lib/mcm.rb"
+require "racional.rb"
+require "gcd.rb"
+require "mcm.rb"
 
 describe Fraccion do	#Es la primera expectativa
 	
