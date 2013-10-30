@@ -80,7 +80,7 @@ describe Fraccion do	#Es la primera expectativa
 			@rac3.num.should eq(1)
 			@rac3.denom.should eq(2)
 		end
-		it "Debe realizarse la división de fracciones" do
+		it "Debe realizarse la division de fracciones" do
 			@rac3 = @rac1 / @rac2
 			@rac3.num.should eq(8)
 			@rac3.denom.should eq(9)
