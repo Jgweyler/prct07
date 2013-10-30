@@ -41,7 +41,7 @@ describe Fraccion do	#Es la primera expectativa
 			@rac1.should == @rac3
 		end
 
-		it "Se debe calcular la fraccion recíproca" do
+		it "Se debe calcular la fraccion reciproca" do
 			@rac3 = Fraccion.new(3,2)
 			@rac1.reciproco.should == @rac3
 		end
