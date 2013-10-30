@@ -20,6 +20,7 @@ La organización de los ficheros y directorios en esta práctica es la siguiente
 ```
 /prct06
 	Rakefile
+	.travis.yml
 	/spec
 		racional_spec.rb
 	/lib
@@ -31,12 +32,20 @@ La organización de los ficheros y directorios en esta práctica es la siguiente
 El fichero **Rakefile**, va a contener varios objetivos.
 
 * `spec` será la opción por defecto y hará que se ejecute el fichero _racional_spec.rb_
-
 * `bin` es la opción que ejecutará el programa principal _racional.rb_
-
 * `test` ejecutará el fichero de pruebas con documentación
-
 * `thtml` ejecutará el fichero de pruebas en formato html. 
+
+El fichero **.travis.yml** contendrá las expectativas para probar nuestro programa haciendo uso de la herramienta **Travis**. Vamos a probar nuestro programa en las siguientes plataformas:
+
+```
+  - 1.9.3
+  - jruby-18mode # JRuby in 1.8 mode
+  - jruby-19mode # JRuby in 1.9 mode
+  - rbx-18mode
+  - rbx-19mode
+  - 1.8.7
+```
 
 En el directorio **spec**, se encuentra el fichero **racional_spec.rb** donde están definidas las expectativas para nuestro programa. 
 Las expectativas están separadas en los siguientes bloques:
@@ -70,8 +79,12 @@ El siguiente directorio es **lib**, aquí se encuentran el fichero principal **r
 
 **mcm.rb** contiene el método que calcula el mínimo común múltiplo, este método es necesario para la suma y/o resta de fracciones de diferente denominador. Hace uso del método `gcd` implementado en el fichero _lib/gcd.rb_.
 
+
+
 Desarrollo de la práctica
 ------------
 
 En esta práctica debemos incluir el módulo comparable en la clase que ya teníamos implementada. Para ello es necesario definir el método `<=>`. Hemos comentado de la práctica anterior los métodos comparacionales para que no se produzca conflicto con el nuevo método que vamos a definir.
 No es necesario crear nuevas expectativas en el fichero **racional_spec.rb**, ya que nos sirven las que teníamos creadas para los operadores comparacionales por separado.
+
+Creamos el fichero **.travis.yml** donde vamos a incluir las plataformas sobre las que se quiere probar nuestro programa.
