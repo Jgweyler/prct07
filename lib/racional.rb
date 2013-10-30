@@ -2,11 +2,12 @@
 
 #Fichero para el desarrollo de la clase Fraccion
 
-require "lib/gcd.rb"
-require "lib/mcm.rb"
+require "gcd.rb"
+require "mcm.rb"
 
 class Fraccion #Definición de la clase Fraccion.
-	
+	include Comparable		#Incluimos el módulo Comparable.
+
 	def initialize(num, den) 	#método para inicializar las variables
 		divisor = gcd(num, den) #obtenemos el gcd entre numerador y denominador para simplificar
 		@num = num/divisor	
@@ -78,7 +79,13 @@ class Fraccion #Definición de la clase Fraccion.
 	def /(other)
 		Fraccion.new(@num*other.denom, @den*other.num)	
 	end
-
+	
+	#Definimos el método que nos va a permitir hacer las comparaciones entre fracciones.
+	def <=> (other)
+		return nil unless other.instance_of? Fraccion  #Comprobamos que 'other' es una instancia de Fraccion y
+		(@num * other.denom) <=> (@den * other.num)    #por lo tanto se puede comparar con un objeto de la misma clase.
+	end
+=begin
 	#Menor
 	def <(other)
 		(@num * other.denom) < (@den * other.num)
@@ -98,4 +105,5 @@ class Fraccion #Definición de la clase Fraccion.
 	def >=(other)
 		(@num * other.denom) >= (@den * other.num)
 	end
+=end 
 end

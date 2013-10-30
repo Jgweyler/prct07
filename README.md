@@ -64,10 +64,7 @@ El siguiente directorio es **lib**, aquí se encuentran el fichero principal **r
 * `-` devuelve un nuevo racional que resta al objeto que invoca el que le pasan como parámetro 
 * `*` devuelve un nuevo racional que multiplica al objeto que invoca el que le pasan como parámetro
 * `/` devuelve un nuevo racional que multiplica al objeto que invoca el que le pasan como parámetro
-* `<` comparamos si una fracción es menor que otra. Devuelve _true_ o _false_
-* `>` comparamos si una fracción es mayor que otra. Devuelve _true_ o _false_
-* `<=` comparamos si una fracción es menor o igual que otra. Devuelve _true_ o _false_
-* `>=` comparamos si una fracción es mayor o igual que otra. Devuelve _true_ o _false_
+* `<=>` este método nos permite usar el módulo comparable en nuestra clase`Fraccion`.
 
 **gcd.rb** contiene el método que calcula el máximo común divisor, es necesario para simplificar las fracciones.
 
@@ -76,4 +73,5 @@ El siguiente directorio es **lib**, aquí se encuentran el fichero principal **r
 Desarrollo de la práctica
 ------------
 
-
+En esta práctica debemos incluir el módulo comparable en la clase que ya teníamos implementada. Para ello es necesario definir el método `<=>`. Hemos comentado de la práctica anterior los métodos comparacionales para que no se produzca conflicto con el nuevo método que vamos a definir.
+No es necesario crear nuevas expectativas en el fichero **racional_spec.rb**, ya que nos sirven las que teníamos creadas para los operadores comparacionales por separado.
